@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fortune Teller</title>
+    <meta name="author" content="Andrew Pan">
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  <body>
+    <header>
+        <h1>Meeting Minutes</h1>
+        <nav>
+          <ul>
+            <li><a href="#attendence">attendence</a></li>
+            <li><a href="#agenda">agenda</a></li>
+            <li><a href="#unfinised business">unfinised business</a></li>
+            <li><a href="#new business">new business</a></li>
+            <li><a href="#questions">questions</a></li>
+            <li><a href="#graphics">graphics</a></li>
+          </ul>
+          <hr>
+        </nav>
+    </header>
+    <main>
+        <section>
+        <h2 id="attendence">attendence</h2>
+            <ul>
+                <li>Andrew</li>
+                <li>Tyler</li>
+                <li>John</li>
+                <li>Thomas</li>
+                <li>Joe</li>
+            </ul>
+        </section>
+        <section>
+        <h2 id="agenda">agenda</h2>
+            <ol>
+                <li>Unfinished Business</li>
+                <li>New Business</li>
+                <li>Questions</li>
+                <li>Graphics</li>
+                <li>AV</li>
+            </ol>
+        </section>
+        <section>
+            <h2 id="unfinised business">unfinised business</h2>
+                <ul>
+                    <li>Meeting time that works for everyone? <strong>4pm Fridays</strong></li>
+                    <li>Getting to <i>know</i> each other</li>
+                    <li>Ideas for <b>team name</b></li>
+                    <li>What does anyone know about <em>fortune tellers?</em></li>
+                    <a href="https://daily.jstor.org/surprising-historical-significance-fortune-telling/">Fortune Telling History</a>
+                </ul>
+        </section>
+        <section>
+            <h2 id="new business">new business</h2>
+                <ul>
+                    <li>We should really talk our stregths and weaknesses. <br> 
+                        Does everyone wanna go around and talk about what they're good
+                        at and not good at? 
+                        <details>
+                            <summary>Pros & Cons</summary>
+                            <p>Pros: Organized, Detail-Oriented</p>
+                            <p>Cons: Time Management, Communication</p>
+                        </details>
+                    </li>
+                    
+                </ul>
+        </section>
+        <section>
+            <h2 id="graphics">graphics</h2>
+            <img src="8ball.gif" alt="Bearl">
+        </section>
+        <div>
+            <h3>AV</h3>
+            <p>Here are some <span>audio and video</span> content from the meeting:</p>
+            <ul>
+                <li>
+                    <audio controls>
+                    <source src="HP.mp3" type="audio/mpeg">
+                    </audio>
+                </li>
+                    <video width="320" height="240" controls>
+                    <source src="orangutan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                <li>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <form>
+            <fieldset>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"><br>
+              
+              <label>
+                <input type="radio" name="gender" value="male"> Male
+              </label>
+              <label>
+                <input type="radio" name="gender" value="female"> Female<br>
+              </label>
+
+              <label>
+                <input type="checkbox" name="Undergrad" value="yes"> Undergrad<br>
+              </label>
+
+              <label for="options">College:</label>
+              <select id="options" name="options">
+                <datalist id="options"></datalist>
+                    <option value="Revelle">Revelle</option>
+                    <option value="Muir">Muir</option>
+                    <option value="Marshall">Marshall</option>
+                    <option value="Warren">Warren</option>
+                    <option value="Roosevelt">Roosevelt</option>
+                    <option value="Sixth">Sixth</option>
+                    <option value="Seventh">Seventh</option>
+                </datalist><br>
+              </select><br>
+
+
+
+              <label>
+                Date of Birth:
+                <input type="date" name="date of birth"><br>
+              </label>
+              
+              <label for="message">Comments?</label>
+              <textarea id="message" name="message"></textarea><br>
+            </fieldset>
+          </form>
+        <p>Copyright Andrew Pan 2023</p>
+    </footer>
+  </body>
+</html>
