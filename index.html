@@ -96,23 +96,22 @@
     <footer>
         <form>
             <fieldset>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name"><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
 
-              <label>
-                <input type="radio" name="gender" value="male"> Male
-              </label>
-              <label>
-                <input type="radio" name="gender" value="female"> Female<br>
-              </label>
+                <label>
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                </label>
 
-              <label>
-                <input type="checkbox" name="Undergrad" value="yes"> Undergrad<br>
-              </label>
+                <label>
+                    <input type="checkbox" name="Undergrad" value="yes"> Undergrad<br>
+                </label>
 
-              <label for="options">College:</label>
-              <select id="options" name="options">
-                <datalist id="colleges"></datalist>
+                <label for="options">College:</label>
+                <select id="options" name="options">
                     <option value="Revelle">Revelle</option>
                     <option value="Muir">Muir</option>
                     <option value="Marshall">Marshall</option>
@@ -120,17 +119,23 @@
                     <option value="Roosevelt">Roosevelt</option>
                     <option value="Sixth">Sixth</option>
                     <option value="Seventh">Seventh</option>
-              </select><br>
+                </select><br>
 
+                <label>
+                    Date of Birth:
+                    <input type="date" name="date of birth"><br>
+                </label>
 
-
-              <label>
-                Date of Birth:
-                <input type="date" name="date of birth"><br>
-              </label>
-              
-              <label for="message">Comments?</label>
-              <textarea id="message" name="message"></textarea><br>
+                <label for="predefined-options">Favorite food:</label>
+                <input list="food" name="predefined-options">
+                <datalist id="food">
+                    <option value="Hamburger">
+                    <option value="Pasta">
+                    <option value="Orange chicken">
+                </datalist><br>
+                
+                <label for="message">Comments?</label>
+                <textarea id="message" name="message"></textarea><br>
             </fieldset>
           </form>
         <p>Copyright Andrew Pan 2023</p>
