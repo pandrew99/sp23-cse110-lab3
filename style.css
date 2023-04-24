@@ -1,0 +1,167 @@
+/* external CSS stylesheet for index.html */
+
+/* Some Colors */
+body {
+    background-color: #929dfd;
+    color: #000000;
+}
+  
+/* Background */
+header {
+  position: static;
+  background-color: 'yellow';
+  
+  margin: 10px 10px 10px 10px;
+  padding: 1px 1px 1px 1px;
+}
+
+/* Some Units */
+section {
+  margin: 5px 5px;
+  padding: 2px 2px;
+  margin: 1%;
+  display: block;
+}
+
+/* Box Model */
+div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text */
+h1 {
+  font-family: 'Bruno Ace SC', sans-serif;
+  max-width: 100in;
+  min-width: 0.1in;
+  color: rgb(1, 1, 1);
+  font-size: 2.2rem;
+  text-align: center;
+  text-decoration: underline;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: 'red';
+  border-radius: 10px;
+}
+
+form {
+  margin-right: auto;
+  margin-top: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Combinators */
+h2, h3 {
+  color: hsl(240, 100%, 50%);
+  text-align: left;
+}
+
+.container p {
+  font-size: 12px;
+}
+
+ul > li {
+  list-style: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h2 ~ p {
+  margin-top: 10px;
+}
+
+h2 + p {
+  font-weight: italic;
+}
+
+li.container {
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 250px);
+  gap: 10px;
+  padding: 1rem;
+  margin: 10px;
+}
+
+a[href="https://daily.jstor.org/surprising-historical-significance-fortune-telling/"]{
+  color: rgb(162, 85, 13);
+}
+
+/* Display */
+.navbar {
+  display: none;
+  position: sticky;
+}
+
+/* Sizing */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Pseudo Classes */
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+button:active {
+  background-color: green;
+  color: white;
+}
+
+input:autofill {
+  border: 3px solid darkorange;
+}
+
+/* Layouts */
+.container {
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  display: flex;
+  align-items: left;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  section {
+    margin: 0;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Minimum resolution */
+@media (min-resolution: 50dpi) {
+  p {
+    text-decoration: underline;
+  }
+}
+
+#agenda {
+  width: auto;
+  height: auto;
+}
+
+* {
+  margin: 10;
+  padding: 0;
+}
+
+/* Fonts */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
