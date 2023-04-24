@@ -1,47 +1,46 @@
 /* external CSS stylesheet for index.html */
 
-/* Some Colors */
 body {
-    background-color: #929dfd;
-    color: #000000;
+    background-color: #929dfd; /* Color Hex Code */
+    color: #000000; /* color */
 }
   
-/* Background */
 header {
-  position: static;
-  background-color: 'yellow';
-  
-  margin: 10px 10px 10px 10px;
-  padding: 1px 1px 1px 1px;
+  position: static; /* Position */
+  background-color: 'yellow'; /* Background Color */
+  margin: 10px 10px 10px 10px; /* Box Model */
+  padding: 1px 1px 1px 1px; /* Box Model */
 }
 
-/* Some Units */
 section {
-  margin: 5px 5px;
-  padding: 2px 2px;
-  margin: 1%;
+  margin: 5px 5px; /* Box Model */
+  padding: 2px 2px; /* Box Model */
+  margin: 1%; /* Relative Unit */
   display: block;
 }
 
-/* Box Model */
+
 div {
+  margin: auto; /* Box Model */
   margin-left: auto;
   margin-right: auto;
+  padding: 0.99em; /* Relative Unit */
 }
 
 /* Text */
 h1 {
   font-family: 'Bruno Ace SC', sans-serif;
-  max-width: 100in;
-  min-width: 0.1in;
+  max-width: 100in; /* Absolute Unit */
+  min-width: 0.1cm; /* Absolute Unit, Sizing */
   color: rgb(1, 1, 1);
-  font-size: 2.2rem;
-  text-align: center;
+  font-size: 2.2rem; /* Relative Unit */
+  text-align: center; /* text-align */
   text-decoration: underline;
 
+  /* Box Model - Borders */
   border-style: solid;
-  border-width: 2px;
-  border-color: 'red';
+  border-width: 2px; /* Absolute Unit */
+  border-color: 'red'; /* Color Name */
   border-radius: 10px;
 }
 
@@ -49,12 +48,12 @@ form {
   margin-right: auto;
   margin-top: auto;
   text-align: center;
-  display: inline-block;
+  display: inline-block; /* display */
 }
 
 /* Combinators */
 h2, h3 {
-  color: hsl(240, 100%, 50%);
+  color: hsl(240, 100%, 50%); /* Color hsl */
   text-align: left;
 }
 
@@ -79,9 +78,10 @@ h2 + p {
 }
 
 li.container {
-  text-decoration: none;
+  text-decoration: none; /* text-decoration */
 }
 
+/* Layouts - Grid */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -91,20 +91,24 @@ main {
   margin: 10px;
 }
 
-a[href="https://daily.jstor.org/surprising-historical-significance-fortune-telling/"]{
-  color: rgb(162, 85, 13);
+.item0 {
+  background-color: gray;
+  color: white;
 }
 
-/* Display */
+a[href="https://daily.jstor.org/surprising-historical-significance-fortune-telling/"]{
+  color: rgb(162, 85, 13); /* Color rgb */
+}
+
 .navbar {
-  display: none;
-  position: sticky;
+  display: none; /* Display */
+  position: sticky; /* Position */
 }
 
 /* Sizing */
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Sizing */
+  height: auto; /* Sizing */
 }
 
 /* Pseudo Classes */
@@ -122,14 +126,17 @@ input:autofill {
   border: 3px solid darkorange;
 }
 
-/* Layouts */
+/* Layouts - Flex */
 .container {
   display: flex;
-  justify-content: space-between;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  display: flex;
+  flex-direction: row;
   align-items: left;
+  justify-content: space-between;
+}
+
+.item1 {
+  background-color: gray;
+  color: white;
 }
 
 /* Responsiveness */
@@ -145,12 +152,12 @@ input:autofill {
 /* Minimum resolution */
 @media (min-resolution: 50dpi) {
   p {
-    text-decoration: underline;
+    text-decoration: underline; /* Text */
   }
 }
 
 #agenda {
-  width: auto;
+  width: auto; /* Sizing */
   height: auto;
 }
 
